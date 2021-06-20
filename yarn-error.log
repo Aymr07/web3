@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files (x86)\nodejs\node.exe C:\Users\Yousuf\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add ether-js -D
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\nodejs\;C:\Program Files\PuTTY\;C:\Users\Yousuf\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Yousuf\AppData\Local\Programs\Python\Python39\;C:\Program Files (x86)\geckodriver-v0.27.0-win64\geckodriver.exe\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Yousuf\AppData\Local\Microsoft\WindowsApps;C:\Users\Yousuf\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Program Files (x86)\msedgedriver.exe\;C:\FFmpeg\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\bin;;C:\src\flutter\bin;C:\Users\Yousuf\AppData\Roaming\Pub\Cache\bin;C:\Program Files\heroku\bin;C:\Users\Yousuf\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.1.0
+
+Platform: 
+  win32 ia32
+
+Trace: 
+  Error: https://registry.yarnpkg.com/ether-js: Not found
+      at Request.params.callback [as _callback] (C:\Users\Yousuf\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at Request.self.callback (C:\Users\Yousuf\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (node:events:365:28)
+      at Request.<anonymous> (C:\Users\Yousuf\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (node:events:365:28)
+      at IncomingMessage.<anonymous> (C:\Users\Yousuf\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (node:events:471:28)
+      at IncomingMessage.emit (node:events:377:35)
+      at endReadableNT (node:internal/streams/readable:1312:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
