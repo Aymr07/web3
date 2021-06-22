@@ -1,24 +1,25 @@
 import Web3 from "web3";
-import { constants, ethers } from "ethers";
-import data, { ethURL, binanceURL } from "./data.json";
+import { ethers, providers } from "ethers";
+import data from "./data.json";
 import fs from "fs";
+import uniswapABI from "./IUniswapV2Factory.json";
+import tokenABI from "./erc20abi.json"
+
+function setDecimals(number, decimals) {
+    number = number.toString();
+    let numberAbs = number.split('.')[0]
+    let numberDecimals = number.split('.')[1] ? number.split('.')[1] : '';
+    while (numberDecimals.length < decimals) {
+        numberDecimals += "0";
+    }
+    return numberAbs + numberDecimals;
+}
 
 
 (async () => {
-    const provider = new ethers.providers.WebSocketProvider(data.ethWebsocket);
+    const provider = new ethers.providers.WebSocketProvider(data.eth.websocket);
+    const wallet = new ethers.Wallet(data.privateKey, provider);
+    console.log(wallet)
 
-    const factory = new ethers.Contract(
-        data.Uniswap.factory,
-        ['event PairCreated(address indexed token0, address indexed token1, address pair, uint);']
-    )
-
-    const router = new ethers.Contract(
-        data.Uniswap.router,
-        [
-            'function getAmountsOut(uint amountIn, address[] memory path) public view returns (uint[] memory amounts)',
-            'function swapExactTokensForTokens(uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline) external returns (uint[] memory amounts)'
-        ],
-    )
-        factory.on("PairCreated", () => console.log(""))
 
 })();
