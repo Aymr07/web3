@@ -4,7 +4,9 @@
     "websocket": "wss://mainnet.infura.io/ws/v3/fea7086935844727af1b78400205e471"
   },
   "binance": {
-    "url": "https://bsc-dataseed1.binance.org"
+    "url": "https://bsc-dataseed1.binance.org",
+    "contract" : "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "USDTokenAddress" : "0x55d398326f99059fF775485246999027B3197955"
   },
   "Uniswap": {
     "WETH": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -12,5 +14,9 @@
     "router": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
     "recipient": "0xf11b2fc4f28150517af11c2c456cbe75e976f663"
   },
-  "privateKey": "0x8e4372630324f911f1d526c5ab459a7497273b4e3a529888828313592c113b9c"
+  "pancake_swap" : "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+  "privateKey": "0x8e4372630324f911f1d526c5ab459a7497273b4e3a529888828313592c113b9c",
+  "usdt": {
+    "contract": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+  }
 }
